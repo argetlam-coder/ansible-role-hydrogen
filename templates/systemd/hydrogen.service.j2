@@ -27,7 +27,7 @@ ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
       --rm \
       --name={{ hydrogen_identifier }} \
       --log-driver=none \
-      --user={{ hydrogen_uid }}:{{ hydrogen_gid }} \
+      --user={{ hydrogen_container_uid }}:{{ hydrogen_container_gid }} \
       --cap-drop=ALL \
       --read-only \
       --network={{ hydrogen_container_network }} \

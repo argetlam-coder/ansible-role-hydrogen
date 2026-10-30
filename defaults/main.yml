@@ -29,6 +29,12 @@ hydrogen_version: v0.5.1
 hydrogen_uid: ""
 hydrogen_gid: ""
 
+# Controls the user that the container runs as. Set to `0` to run as root.
+hydrogen_container_uid: "{{ hydrogen_uid }}"
+
+# Controls the group that the container runs as. Set to `0` to run as root.
+hydrogen_container_gid: "{{ hydrogen_gid }}"
+
 # The scheme used for serving Hydrogen.
 hydrogen_scheme: https
 
